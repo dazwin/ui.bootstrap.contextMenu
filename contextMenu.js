@@ -31,6 +31,7 @@ angular.module('ui.bootstrap.contextMenu', [])
         "use strict";
 
         var $a = $('<a>');
+        $a.addClass('dropdown-item');
         $a.css("padding-right", "8px");
         $a.attr({ tabindex: '-1', href: '#' });
 
@@ -248,7 +249,6 @@ angular.module('ui.bootstrap.contextMenu', [])
             } else {
                 processItem($scope, event, model, item, $ul, $li, $promises, $q, $, level);
             }
-            $li.addClass('dropdown-item');
             $ul.append($li);
         });
         $contextMenu.append($ul);
