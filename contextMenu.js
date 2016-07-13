@@ -248,6 +248,7 @@ angular.module('ui.bootstrap.contextMenu', [])
             } else {
                 processItem($scope, event, model, item, $ul, $li, $promises, $q, $, level);
             }
+            $li.addClass('dropdown-item');
             $ul.append($li);
         });
         $contextMenu.append($ul);
